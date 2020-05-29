@@ -38,10 +38,19 @@ contract SolnSquareVerifier is Realty {
         emit SolutionAdded(index, prover);
     }
 
+    function solutionCount() public view onlyOwner returns (uint256) {
+        return solutionArr.length;
+    }
+
+    // testing purpose only
+    function deleteSolutions() public onlyOwner {
+        delete solutionArr;
+    }
+
     // TODO Create a function to mint new NFT only after the solution has been verified
     //  - make sure the solution is unique (has not been used before)
     //  - make sure you handle metadata as well as tokenSupply
-    function mint(
+    function mintToken(
         bytes32 solutionHash,
         address to,
         uint256 tokenId,

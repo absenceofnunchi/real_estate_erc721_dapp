@@ -650,8 +650,8 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
 
 contract Realty is
     ERC721Metadata(
-        "RealtyToken",
-        "RTT",
+        "EtherRealty",
+        "ERT",
         "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/"
     )
 {
