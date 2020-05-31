@@ -2,6 +2,20 @@
 
 A real estate listing and sales DApp on Ethereum using ERC721.
 
+## Open Sea Storefront
+
+Listing and bidding panel
+
+![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/assets/1.png)
+
+Details of the listing
+
+![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/assets/2.png)
+
+Transaction history on Ethereum blockchain
+
+![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/assets/3.png)
+
 ## Installing
 
 First, install Truffle globally.  
@@ -75,18 +89,19 @@ Copy and paste the proof into `mint.js` in the `scripts` folder.
 
 ## Rinkeby Testnet
 
-- [SolnSquareVerifier Contract](https://rinkeby.etherscan.io/address/0x0aa1c03996f3a15302031c59321b26072492985a)
-- [Verifier Contract](https://rinkeby.etherscan.io/address/0x1f85ef83a6693015ff65a354da3a5db07905ea47)
-- [Realty Contract](https://rinkeby.etherscan.io/address/0xD75b36582ABDcC457AFDA243B8483F9f5625db18)
+- [SolnSquareVerifier Contract](https://rinkeby.etherscan.io/address/0x0B2DB4c6f36534538c247F3A93D8c10Cbd436d23)
+- [Verifier Contract](https://rinkeby.etherscan.io/address/0xF11f7d18B4f99e192f84006f8e29eD9C0d2a188f)
+- [Realty Contract](https://rinkeby.etherscan.io/address/0x26225442900c960e46f57f9d0546Cc58856064ea)
 
 ## Open Sea
 
-- [Store Front](https://rinkeby.opensea.io/assets/etherrealty-v2)
-- [First Listing](https://rinkeby.etherscan.io/tx/0xe888fb7dc73d0710001ff73e3c92085125974cdb01321f79016e10e430de38d1)
-- [Second Listing](https://rinkeby.etherscan.io/tx/0x170e96bc7c5037dcfdfc667152078cca3150459ee610fcff7f69e3f8e9fe12eb)
-- [Third List](0x9ff6b4b733099d239447ee1c45cd80962fa0a0b8c4773f15c43c19929d67bfd9)
-- [WETH converted from ETH](https://rinkeby.etherscan.io/tx/0x12e90768f352734b6bd019cfa12db0911749578142f30f2ea6f228b5178dc02d)
-- [Offer Made](https://rinkeby.etherscan.io/tx/0x856e6348f02b9f40544acc751397aaa2586805a483cc5e15c112218cc8e3b2b9)
+- [Store Front](https://rinkeby.opensea.io/assets/etherrealty-v3)
+- [Listing on Open Sea](https://rinkeby.opensea.io/assets/0x0b2db4c6f36534538c247f3a93d8c10cbd436d23/0)
+- [Listing on Etherscan](https://rinkeby.etherscan.io/tx/0x4cfb03e86b10b29ca9dd152fed01e32abb43f407a5e211b8ea3c99282e50124b)
+- [Sell](https://rinkeby.etherscan.io/tx/0x18f27bc67e20fd6e3960fc8a817640526cb1db4b51391132a412ccba55411c30)
+- [Approve](https://rinkeby.etherscan.io/tx/0x1ca6fcaaa3ad3469c03c10d9f86f8aef202f7aeffd4b077e06db859ec3406872)
+- [WEH Conversion](https://rinkeby.etherscan.io/tx/0x2b9fb75d36125ebd70f1da1a0ed33c169907d09a3bdb64fb661af4495c094f66)
+- [Bid Accepted](https://rinkeby.etherscan.io/tx/0x9deaaf58e923aaf20cd57c50609dbfcf184cbbd22d7f4ff8190e764ef2deec17)
 
 ## Project Resources
 
