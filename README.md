@@ -6,15 +6,15 @@ A real estate listing and sales DApp on Ethereum using ERC721.
 
 Listing and bidding panel
 
-![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/assets/1.png)
+![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/blob/master/assets/1.png)
 
 Details of the listing
 
-![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/assets/2.png)
+![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/blob/master/assets/3.png)
 
 Transaction history on Ethereum blockchain
 
-![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/assets/3.png)
+![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/blob/master/assets/3.png)
 
 ## Installing
 
