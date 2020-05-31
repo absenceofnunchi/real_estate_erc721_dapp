@@ -10,7 +10,7 @@ Listing and bidding panel
 
 Details of the listing
 
-![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/blob/master/assets/3.png)
+![open sea storefront1](https://github.com/igibliss00/real_estate_erc721_dapp/blob/master/assets/2.png)
 
 Transaction history on Ethereum blockchain
 
@@ -113,3 +113,5 @@ Copy and paste the proof into `mint.js` in the `scripts` folder.
 - [Interactive zero knowledge 3-colorability demonstration](http://web.mit.edu/~ezyang/Public/graph/svg.html)
 - [Docker](https://docs.docker.com/install/)
 - [ZoKrates](https://github.com/Zokrates/ZoKrates)
+
+.
