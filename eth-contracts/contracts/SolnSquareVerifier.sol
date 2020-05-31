@@ -30,10 +30,25 @@ contract SolnSquareVerifier is Realty {
     event SolutionAdded(uint256 index, address prover);
 
     // TODO Create a function to add the solutions to the array and emit the event
-    function addSolution(uint256 index, address prover) public {
+    function _addSolution(
+        uint256 index,
+        address prover,
+        uint256[2] memory a,
+        uint256[2][2] memory b,
+        uint256[2] memory c,
+        uint256[2] memory input
+    ) internal {
         require(prover != address(0), "Invalid address");
+        bytes32 hashedSolution = keccak256(abi.encodePacked(a, b, c, input));
+        require(
+            !submittedSolutions[hashedSolution].exists,
+            "The solution exists already"
+        );
+
         Solution memory newSolution = Solution(index, prover, true);
         solutionArr.push(newSolution);
+
+        submittedSolutions[hashedSolution] = newSolution;
 
         emit SolutionAdded(index, prover);
     }
@@ -50,8 +65,7 @@ contract SolnSquareVerifier is Realty {
     // TODO Create a function to mint new NFT only after the solution has been verified
     //  - make sure the solution is unique (has not been used before)
     //  - make sure you handle metadata as well as tokenSupply
-    function mint(
-        bytes32 solutionHash,
+    function mintToken(
         address to,
         uint256 tokenId,
         uint256[2] memory a,
@@ -59,12 +73,8 @@ contract SolnSquareVerifier is Realty {
         uint256[2] memory c,
         uint256[2] memory input
     ) public {
-        require(
-            submittedSolutions[solutionHash].exists == false,
-            "The solution already exists"
-        );
         require(verifier.verifyTx(a, b, c, input), "Not verified");
-        addSolution(tokenId, to);
+        _addSolution(tokenId, to, a, b, c, input);
         super.mint(to, tokenId);
     }
 }

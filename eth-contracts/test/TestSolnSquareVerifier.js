@@ -14,19 +14,10 @@ contract("SolnSquareVerifier", (accounts) => {
       });
     });
 
-    it("Test if a new solution can be added for contract - SolnSquareVerifier", async () => {
+    it("Test if an ERC721 token can be added and minted for contract - SolnSquareVerifier", async () => {
       await this.contract.deleteSolutions({ from: owner });
-      await this.contract.addSolution(1, account_one, {
-        from: owner,
-      });
-      const tokenCount = await this.contract.solutionCount({ from: owner });
 
-      assert.equal(tokenCount, 1, "Solution not added correctly");
-    });
-
-    it("Test if an ERC721 token can be minted for contract - SolnSquareVerifier", async () => {
       await this.contract.mintToken(
-        accounts[1],
         accounts[2],
         1,
         [
@@ -53,6 +44,9 @@ contract("SolnSquareVerifier", (accounts) => {
         ],
         { from: owner }
       );
+
+      const tokenCount = await this.contract.solutionCount({ from: owner });
+      assert.equal(tokenCount, 1, "Solution not added correctly");
     });
   });
 });
